@@ -1,0 +1,86 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner Section */
+.banner {
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding-top: 60px;
+}
+
+/* About Section */
+#about img {
+  width: 100%;
+  height: auto;
+}
+
+/* Menu Cards */
+.menu-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.menu-card img {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid #f1f1f1;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Responsive Banner Text */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .banner p {
+    font-size: 1rem;
+  }
+}
